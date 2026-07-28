@@ -1,0 +1,8 @@
+<%-- Default Skin: Applies automatically to all Label controls using this theme --%>
+<asp:Label runat="server" Font-Names="Arial" Font-Size="14px" ForeColor="#0056b3" />
+
+<%-- Named Skin: Applies only when SkinID="HeaderLabel" is declared --%>
+<asp:Label runat="server" SkinID="HeaderLabel" Font-Names="Arial" Font-Size="24px" Font-Bold="true" ForeColor="#002b5c" />
+
+<%-- Default Button Skin --%>
+<asp:Button runat="server" BackColor="#007bff" ForeColor="White" BorderWidth="1px" BorderColor="#0056b3" Height="35px" Width="150px" />
