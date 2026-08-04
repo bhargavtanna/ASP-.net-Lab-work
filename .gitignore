@@ -1,0 +1,46 @@
+# Visual Studio cache/options directory
+.vs/
+
+# Build results
+bin/
+obj/
+
+# Visual Studio project user files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Local History for Visual Studio
+.localhistory/
+
+# Rider
+.idea/
+*.sln.iml
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+
+# ReSharper
+.ReSharper/
+*.DotSettings.user
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Test Results
+TestResults/
+
+# Publishing
+PublishProfiles/
+*.pubxml
+*.publishproj
+
+# Misc
+*.log
+*.pdb
+.DS_Store
+Thumbs.db

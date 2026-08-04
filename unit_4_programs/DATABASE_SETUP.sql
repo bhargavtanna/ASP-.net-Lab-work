@@ -1,0 +1,55 @@
+CREATE DATABASE unit_4_db;
+
+USE unit_4_db;
+
+CREATE TABLE users (
+	UserID INT PRIMARY KEY IDENTITY(1,1),
+	FullName NVARCHAR(100),
+	Email NVARCHAR(100),
+	Username NVARCHAR(50),
+	Password NVARCHAR(100),
+	Phone NVARCHAR(20),
+	Address NVARCHAR(200),
+	CreatedDate DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE students (
+	StudentID INT PRIMARY KEY IDENTITY(1,1),
+	FirstName NVARCHAR(100),
+	LastName NVARCHAR(100),
+	Email NVARCHAR(100),
+	RollNumber NVARCHAR(50),
+	Course NVARCHAR(100),
+	Phone NVARCHAR(20),
+	DOB DATE,
+	Address NVARCHAR(200),
+	UserID NVARCHAR(100),
+	Password NVARCHAR(100),
+	CreatedDate DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE employees (
+	EmployeeID INT PRIMARY KEY IDENTITY(1,1),
+	EmployeeName NVARCHAR(100),
+	Email NVARCHAR(100),
+	Phone NVARCHAR(20),
+	Position NVARCHAR(100),
+	Department NVARCHAR(100),
+	Salary DECIMAL(10,2),
+	Address NVARCHAR(200),
+	CreatedDate DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE marksheets (
+	MarksheetID INT PRIMARY KEY IDENTITY(1,1),
+	RollNumber NVARCHAR(50),
+	StudentName NVARCHAR(100),
+	Subject1 INT,
+	Subject2 INT,
+	Subject3 INT,
+	Subject4 INT,
+	Subject5 INT,
+	TotalMarks INT,
+	Percentage DECIMAL(5,2),
+	CreatedDate DATETIME DEFAULT GETDATE()
+);
